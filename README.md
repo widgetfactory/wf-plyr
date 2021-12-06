@@ -10,7 +10,7 @@ Install using the Joomla Extensions Installer and enable after installation.
 https://docs.joomla.org/Installing_an_extension
 
 ## Configuration and Usage
-Wf Plyr will upgrade any <video>, <audio> element, or any Youtube or Vimeo iframe player into a "simple, lightweight, accessible and customizable HTML5, YouTube and Vimeo media player that supports modern browsers."
+Wf Plyr will upgrade any video or audio element, or any Youtube or Vimeo iframe player into a "simple, lightweight, accessible and customizable HTML5, YouTube and Vimeo media player that supports modern browsers."
   
 Various options are available in Extensions -> Plugins -> Plyr
 
