@@ -74,13 +74,13 @@ class PlgSystemWf_Plyr extends JPlugin
         $controls = $this->params->get('controls');
 
         if (!is_null($controls)) {
-            $options['controls'] = is_string($controls) ? implode(',', $controls) : $controls;
+            $options['controls'] = is_string($controls) ? explode(',', $controls) : $controls;
         }
 
         $settings = $this->params->get('settings');
 
         if (!is_null($settings)) {
-            $options['settings'] = is_string($settings) ? implode(',', $settings) : $settings;
+            $options['settings'] = is_string($settings) ? explode(',', $settings) : $settings;
         }
 
         $document->addScriptDeclaration('document.addEventListener("DOMContentLoaded",function handler(){
