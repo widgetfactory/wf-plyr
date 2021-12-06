@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.9" type="plugin" group="system" method="upgrade">
+	<name>plg_system_wf_plyr</name>
+	<author>Widget Factory</author>
+	<creationDate>December 2021</creationDate>
+	<copyright>Copyright (C) 2021 Ryan Demmer. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@joomlacontenteditor.net</authorEmail>
+	<authorUrl>https://www.joomlacontenteditor.net</authorUrl>
+	<version>1.0.0</version>
+	<description>A Joomla Plugin for the Plyr Media Player</description>
+	<files folder="plugins/system/wf_plyr">
+		<filename plugin="wf_plyr">wf_plyr.php</filename>
+		<filename>index.html</filename>
+		<folder>fields</folder>
+		<folder>language</folder>
+	</files>
+	<config>
+		 <fields name="params">
+            <fieldset name="options" group="options" addfieldpath="/plugins/system/wf_plyr/fields">
+				<field name="menu_assign" type="menuitem" state="1" default="" multiple="multiple" size="10" label="PLG_SYSTEM_WF_PLYR_MENU_ASSIGN" description="PLG_SYSTEM_WF_PLYR_MENU_ASSIGN_DESC" />
+                <field name="menu_exclude" type="menuitem" state="1" default="" multiple="multiple" size="10" label="PLG_SYSTEM_WF_PLYR_MENU_EXCLUDE" description="PLG_SYSTEM_WF_PLYR_MENU_EXCLUDE_DESC" />
+                
+				<field name="elements" type="settingslist" default="iframe,video,audio" multiple="multiple" label="PLG_SYSTEM_WF_PLYR_ELEMENTS" description="PLG_SYSTEM_WF_PLYR_ELEMENTS_DESC" layout="joomla.form.field.list-fancy-select">
+					<option value="iframe">iframe</option>
+					<option value="video">video</option>
+					<option value="audio">audio</option>
+				</field>
+				
+				<field name="controls" type="settingslist" default="play-large,play,progress,current-time,mute,volume,captions,settings,fullscreen" multiple="multiple" label="PLG_SYSTEM_WF_PLYR_CONTROLS" description="PLG_SYSTEM_WF_PLYR_CONTROLS_DESC" layout="joomla.form.field.list-fancy-select">
+					<option value="play-large">play-large</option>
+					<option value="play">play</option>
+					<option value="progress">progress</option>
+					<option value="current-time">current-time</option>
+					<option value="mute">mute</option>
+					<option value="volume">volume</option>
+					<option value="captions">captions</option>
+					<option value="settings">settings</option>
+					<option value="pip">pip</option>
+					<option value="airplay">airplay</option>
+					<option value="fullscreen">fullscreen</option>
+				</field>
+
+				<field name="settings" type="settingslist" default="captions,quality,speed,loop" multiple="multiple" label="PLG_SYSTEM_WF_PLYR_SETTINGS" description="PLG_SYSTEM_WF_PLYR_SETTINGS_DESC" layout="joomla.form.field.list-fancy-select">
+					<option value="captions">captions</option>
+					<option value="quality">quality</option>
+					<option value="speed">speed</option>
+					<option value="loop">loop</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+        <server type="extension" priority="1" name="Wf Plyr"><![CDATA[https://cdn.joomlacontenteditor.net/updates/xml/plg_system_wf_plyr.xml]]></server>
+    </updateservers>
+</extension>
