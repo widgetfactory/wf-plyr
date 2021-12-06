@@ -1,5 +1,5 @@
 # Wf Plyr
-A Joomla plugin for for Plyr Media Player - https://plyr.io/
+A Joomla plugin for Plyr Media Player - https://plyr.io
 
 ## Download
 Downloads are available in [Releases](https://github.com/widgetfactory/wf-plyr/releases/).
